@@ -1,0 +1,16 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    width: 100%;
+    background-color: aliceblue;
+}
+
+header{
+    height: 100px;
+}
+
+header .logo{
+    max-height: 100%;
+}
