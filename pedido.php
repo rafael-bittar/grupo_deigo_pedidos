@@ -12,7 +12,7 @@ get_header();
     <form id="orcamento_form">
     <div id="info">
         <div>
-            <label class="item_field">
+            <label class="order_field">
                 Cliente
                 <input type="text" name="cliente"></input>
             </label>
@@ -20,28 +20,28 @@ get_header();
         </div>
 
         <div>
-            <label class="item_field">
+            <label class="order_field">
                 Solicitante
                 <input type="text" name="solicitante"></input>
             </label>
         </div>
 
         <div>
-            <label class="item_field">
+            <label class="order_field">
                 CNPJ
                 <input type="text" name="cnpj"></input>
             </label>
         </div>
 
         <div>
-            <label class="item_field">
+            <label class="order_field">
                 Data de entrega
                 <input type="datetime-local" name="date_delivery"></input>
             </label>
         </div>
 
         <div>
-            <label class="item_field">
+            <label class="order_field">
                 CEP
                 <input type="text" name="cep"></input>
             </label>
