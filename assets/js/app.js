@@ -55,6 +55,7 @@ function addItem() {
 	const comissao_section = createItemSection("comissao", "Comissão");
 	const lucro_section = createItemSection("lucro", "Lucro");
 	const bv_section = createItemSection("bv", "BV");
+	const imposto_section = createItemSection("imposto", "Impostos");
 	const venda_section = createItemSection("venda", "Venda");
 
 	// CREATING THE FORM INPUTS FOR THE NEW ITEM
@@ -76,17 +77,21 @@ function addItem() {
 	gravacao_section.appendChild(createInput("qtd_gravacao", "number", "Quantidade para gravação"));
 	gravacao_section.appendChild(createInput("vlr_un_gravacao", "number", "Valor unitário - gravação"));
 
-	// -=-=-=-=-=-=- COMISSÃO -=-=-=-=-=-=-
-	new_item.appendChild(comissao_section);
-	comissao_section.appendChild(createInput("margem_comissao", "number", "Margem de comissão"));
-
 	// -=-=-=-=-=-=- LUCRO -=-=-=-=-=-=-
 	new_item.appendChild(lucro_section);
 	lucro_section.appendChild(createInput("margem_lucro", "number", "Margem de lucro"));
 
+	// -=-=-=-=-=-=- COMISSÃO -=-=-=-=-=-=-
+	new_item.appendChild(comissao_section);
+	comissao_section.appendChild(createInput("margem_comissao", "number", "Margem de comissão"));
+
 	// -=-=-=-=-=-=- BV -=-=-=-=-=-=-
 	new_item.appendChild(bv_section);
 	bv_section.appendChild(createInput("margem_bv", "number", "Percentual BV"));
+
+	// -=-=-=-=-=-=- IMPOSTO -=-=-=-=-=-=-
+	new_item.appendChild(imposto_section);
+	imposto_section.appendChild(createInput("margem_imposto", "number", "Percentual imposto"));
 
 	// -=-=-=-=-=-=- VENDA -=-=-=-=-=-=-
 	new_item.appendChild(venda_section);
